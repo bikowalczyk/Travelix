@@ -4,7 +4,7 @@
   "description": "Site for company selling trips around Hawaii",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass public/sass/main.scss public/css/main.css -w",
+    "compile:sass": "node-sass public/sass/main.scss public/css/main.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Blazej Kowalczyk",
