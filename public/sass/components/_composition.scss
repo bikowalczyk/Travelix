@@ -1,12 +1,16 @@
-.composition{
+.composition {
     display: flex;
     justify-content: space-evenly;
     height: 40vh;
-    margin: auto 0 ;
-    &__img{
-        
+    margin: auto 0;
+    &__img {
         width: 30%;
         object-fit: cover;
         opacity: 0.8;
+        border-radius: 5px;
+
+        &:hover{
+            opacity: 1;
+        }
     }
 }
