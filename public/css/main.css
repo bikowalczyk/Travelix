@@ -1,6 +1,9 @@
 .t-center {
   text-align: center; }
 
+.margin-t-big {
+  margin-top: 8vh !important; }
+
 *,
 *::before,
 *::after {
@@ -18,9 +21,13 @@ body {
   font-family: "Lato";
   font-weight: 400;
   color: #7F7F7F; }
+  body a,
+  body a:visited {
+    text-decoration: none;
+    color: inherit; }
 
 .heading-1 {
-  font-size: 15vw;
+  font-size: 14vw;
   font-weight: 800;
   color: #CBF1F5;
   margin: 0; }
@@ -45,10 +52,38 @@ body {
     .composition__img:hover {
       opacity: 1; }
 
+.navbar {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: absolute; }
+  .navbar__logo {
+    color: #E3FDFD;
+    font-size: 2.6rem;
+    margin: 0.5rem 0rem 0.5rem 1.5rem;
+    font-weight: 600;
+    border-bottom: solid 2px;
+    display: flex;
+    align-items: center; }
+  .navbar__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 50%;
+    color: #5FA9AD; }
+    .navbar__nav a:not(:last-child) {
+      margin-right: 4rem; }
+    .navbar__nav--buy {
+      text-decoration: underline; }
+
 .header {
   height: 100vh;
   width: 100%;
-  display: flex; }
+  display: flex;
+  background-image: linear-gradient(to right, transparent 10%, #ffffff 50%, transparent 51%); }
   .header__content {
     width: 50%;
     max-height: 100%;

@@ -1,0 +1,38 @@
+.navbar{
+    width: 100%;                        //should I change margin rems to vh?
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: absolute;
+
+    &__logo{
+        color: $color-light-1;
+        font-size: 2.6rem;
+        margin: 0.5rem 0rem 0.5rem 1.5rem;
+        font-weight: 600;
+        border-bottom: solid 2px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        width: 50%;
+        color: $color-dark-2;
+
+        a:not(:last-child){
+            margin-right: 4rem;
+
+        }
+        &--buy{
+            text-decoration: underline;
+        }
+    }
+
+    
+}

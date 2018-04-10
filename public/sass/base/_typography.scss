@@ -2,10 +2,17 @@ body{
     font-family: "Lato";
     font-weight: 400;
     color: $color-dark-3;
+
+    a,
+    a:visited,
+    {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .heading-1{
-    font-size: 15vw;
+    font-size: 14vw;
     font-weight: 800;
     color: $color-light-2;
     margin: 0;
