@@ -73,11 +73,17 @@ body {
     align-items: center;
     font-size: 2rem;
     width: 50%;
-    color: #5FA9AD; }
+    color: #5FA9AD;
+    position: relative; }
     .navbar__nav a:not(:last-child) {
       margin-right: 4rem; }
     .navbar__nav--buy {
       text-decoration: underline; }
+    .navbar__nav-cart {
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+      right: 1.5rem; }
 
 .header {
   height: 100vh;

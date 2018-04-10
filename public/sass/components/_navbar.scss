@@ -24,6 +24,7 @@
         font-size: 2rem;
         width: 50%;
         color: $color-dark-2;
+        position: relative;
 
         a:not(:last-child){
             margin-right: 4rem;
@@ -31,6 +32,13 @@
         }
         &--buy{
             text-decoration: underline;
+        }
+
+        &-cart{
+            height: 4rem;
+            width: 4rem;
+            position: absolute;
+            right: 1.5rem;
         }
     }
 
