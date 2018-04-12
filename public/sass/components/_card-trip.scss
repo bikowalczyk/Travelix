@@ -1,0 +1,50 @@
+.card-trip{
+    height: 100%;
+    // max-height: 53rem;
+    min-height: 53rem;
+    // min-width: 35rem;
+    width: 45%;
+    background-color: $color-light-2;
+    border-radius: 10px;
+    font-size: $font-size-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+        
+    img{
+        border-radius: 5px;
+        object-fit: cover;
+        width: 80%;
+        max-height: 35vmin;
+        min-height: 25rem;
+        margin: 3rem auto 2rem auto;
+    }
+
+    h4{
+        font-size: 2.8rem;
+    }
+
+    p{
+        margin: 1rem auto;
+    }
+
+    a{
+        margin: 2rem auto 3rem;
+        padding: 1.5rem 4rem;
+        color: white !important; //as for now
+        border-radius: 50px;
+        // display: block;
+        background-color: $color-dark-1;
+        
+
+    }
+    
+    &:not(:hover):not(.card-trip--main){
+        filter: blur(3px);
+    }
+    &:not(:last-child){
+        margin-right: 3rem;
+    }
+
+}

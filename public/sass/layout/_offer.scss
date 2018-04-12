@@ -1,0 +1,13 @@
+.offer {
+    background-image: linear-gradient($color-light-1, rgba($color-light-3, 0.4) 40%);
+    &__content{
+        margin: auto;
+        min-height: 50%;
+        padding: 5%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
