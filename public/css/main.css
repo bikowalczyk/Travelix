@@ -162,7 +162,6 @@ body {
       .learn-more__content--pictures img {
         width: 40rem;
         object-fit: cover;
-        max-height: 100%;
         border-radius: 5px; }
     .learn-more__content--people {
       display: grid;
