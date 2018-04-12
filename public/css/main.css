@@ -130,7 +130,7 @@ body {
       grid-row-gap: 10px;
       align-items: center;
       justify-items: center; }
-      .learn-more__content--pictures p {
+      .learn-more__content--pictures figcaption {
         font-size: 2rem; }
       .learn-more__content--pictures img {
         width: 40rem;
@@ -144,7 +144,7 @@ body {
       grid-row-gap: 3rem;
       align-items: center;
       justify-items: center; }
-      .learn-more__content--people p {
+      .learn-more__content--people figcaption {
         margin-left: 2.5rem;
         font-size: 2.4vmin;
         font-style: italic; }
