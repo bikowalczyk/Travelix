@@ -16,10 +16,10 @@
             align-items: center;
             justify-items: center;
             p {
-                font-size: 3vmin;
+                font-size: 2rem;
             }
             img {
-                width: 100%;
+                width: 40rem;
                 object-fit: cover;
                 max-height: 100%;
                 border-radius: 5px;
@@ -29,17 +29,17 @@
             display: grid;
             grid-template-columns: 1fr 2fr;
             grid-template-rows: 1fr 1fr 1fr;
-            grid-row-gap: 2vmin;
+            grid-row-gap: 3rem;
             align-items: center;
             justify-items: center;
             p {
-                margin-left: 2.5vmin;
+                margin-left: 2.5rem;
                 font-size: $font-size-1;
                 font-style: italic;
             }
             img {
-                width: 22vmin;
-                height: 22vmin;
+                width: 15rem;
+                height: 15rem;
                 object-fit: cover;
                 border-radius: 50%; // shape-outside: circle(50%);
             }

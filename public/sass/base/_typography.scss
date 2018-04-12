@@ -11,14 +11,14 @@ body {
 }
 
 .heading-1 {
-    font-size: 14vw; //better to use vmin?
+    font-size: 15rem; //better to use vmin? edit: the best way is to use REM because of zooming issues with vunits
     font-weight: 800;
     color: $color-light-2;
     margin: 0;
 }
 
 .heading-2 {
-    font-size: 1.2vw;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: 400;
     padding: 0 5.5vw 0;
