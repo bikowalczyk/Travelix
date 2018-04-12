@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,9 @@
         <div class="navbar__logo">Travelix</div>
         <div class="navbar__nav">
             <nav>
-                <a href="#">Learn more</a>
-                <a href="#">Contact us</a>
-                <a href="#" class="navbar__nav--buy">Buy now!</a>
+                <a href="#learn-more">Learn more</a>
+                <a href="#contact">Contact us</a>
+                <a href="#buy" class="navbar__nav--buy">Buy now!</a>
             </nav>
         </div>
     </div>
@@ -36,16 +36,16 @@
                 <br>unde omnis istpoe natus error sit voluptatem accusantium
             </h3>
             <div class="composition">
-                <img src="img/lava_large.jpg" alt="Lava">
-                <img src="img/hike_large.jpg" alt="Hiking">
-                <img src="img/windsurfing_large.jpg" alt="Surfing">
+                <a href=""><img src="img/lava_large.jpg" alt="Lava"></a>
+                <a href=""><img src="img/hike_large.jpg" alt="Hiking"></a>
+                <a href=""><img src="img/windsurfing_large.jpg" alt="Surfing"></a>
             </div>
 
         </div>
     </header>
 
     <main>
-        <section class="learn-more">
+        <section id="learn-more" class="learn-more">
             <div class="learn-more__content learn-more__content--people">
 
                 <figure class="card-people card-people--1">
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section class="offer">
+        <section id="buy" class="offer">
 
             <div class="offer__content">
 
@@ -118,7 +118,7 @@
 
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact__content">
                 <h1 class="heading-1 t-center">Contact us</h1>
 
@@ -134,9 +134,14 @@
     </main>
 
     <footer class="footer">
-        
+
     </footer>
 
 </body>
+
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
 </html>
