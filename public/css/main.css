@@ -104,18 +104,21 @@ body {
     margin: 3rem auto 2rem auto; }
   .card-trip h4 {
     font-size: 2.8rem; }
+  .card-trip a {
+    color: white !important; }
   .card-trip p {
     margin: 1rem auto; }
-  .card-trip a {
-    margin: 2rem auto 3rem;
-    padding: 1.5rem 4rem;
-    color: white !important;
-    border-radius: 50px;
-    background-color: #71C9CE; }
   .card-trip:not(:hover):not(.card-trip--main) {
     filter: blur(3px); }
   .card-trip:not(:last-child) {
     margin-right: 3rem; }
+
+.btn {
+  margin: 2rem auto 3rem;
+  padding: 1.5rem 4rem;
+  color: white;
+  border-radius: 50px;
+  background-color: #71C9CE; }
 
 .header {
   height: 100vh;
@@ -199,3 +202,40 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.contact {
+  display: flex;
+  min-height: 50rem;
+  background-image: radial-gradient(#CBF1F5, #71C9CE);
+  justify-content: center;
+  align-content: center; }
+  .contact__content-form {
+    display: flex;
+    flex-direction: column; }
+    .contact__content-form input {
+      margin: 1rem; }
+    .contact__content-form input[type="email"] {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 10px;
+      color: inherit; }
+    .contact__content-form textarea {
+      padding: 0rem 1rem;
+      height: 30vmin;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      margin: 1rem;
+      font: initial;
+      color: inherit; }
+    .contact__content-form button {
+      border: none;
+      cursor: pointer;
+      padding: 1.5rem 7rem;
+      background-color: #E3FDFD;
+      color: inherit;
+      font-size: 1.5rem; }
+
+.footer {
+  height: 10rem;
+  background-color: #E3FDFD; }
