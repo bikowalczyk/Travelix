@@ -5,3 +5,13 @@
 .margin-t-big{
     margin-top: 8vh !important;
 }
+
+.blur-rest{             //used @ offer section
+    &:not(:hover){
+    filter: blur(3px);
+    }
+}
+
+.hide{
+    display: none !important;
+}

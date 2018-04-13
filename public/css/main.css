@@ -4,6 +4,12 @@
 .margin-t-big {
   margin-top: 8vh !important; }
 
+.blur-rest:not(:hover) {
+  filter: blur(3px); }
+
+.hide {
+  display: none !important; }
+
 *,
 *::before,
 *::after {
@@ -16,6 +22,12 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.fade-out {
+  opacity: 0; }
+
+.fade-in {
+  opacity: 1; }
 
 body {
   font-family: "Lato";
@@ -67,7 +79,8 @@ body {
   justify-content: space-between;
   align-content: center;
   position: absolute;
-  z-index: 10; }
+  z-index: 10;
+  transition: all 0.5s ease; }
   .navbar__logo {
     color: #E3FDFD;
     font-size: 2.6rem;
@@ -87,6 +100,13 @@ body {
       margin-right: 4rem; }
     .navbar__nav--buy {
       text-decoration: underline; }
+  .navbar--fixed {
+    position: fixed;
+    background-color: white;
+    border-radius: 3px;
+    opacity: 0.9; }
+    .navbar--fixed .navbar__logo {
+      color: #5FA9AD; }
 
 .card-trip {
   height: 100%;
@@ -112,8 +132,6 @@ body {
     color: white !important; }
   .card-trip p {
     margin: 1rem auto; }
-  .card-trip:not(:hover):not(.card-trip--main) {
-    filter: blur(3px); }
   .card-trip:not(:last-child) {
     margin-right: 3rem; }
 
@@ -160,7 +178,8 @@ body {
       grid-template-rows: auto;
       grid-row-gap: 10px;
       align-items: center;
-      justify-items: center; }
+      justify-items: center;
+      transition: opacity 0.2s; }
       .learn-more__content--pictures figcaption {
         font-size: 2rem; }
       .learn-more__content--pictures img {

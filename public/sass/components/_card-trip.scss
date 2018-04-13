@@ -32,9 +32,6 @@
         margin: 1rem auto;
     }
     
-    &:not(:hover):not(.card-trip--main){
-        filter: blur(3px);
-    }
     &:not(:last-child){
         margin-right: 3rem;
     }
