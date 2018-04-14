@@ -8,10 +8,8 @@
   filter: blur(3px); }
 
 .d-none {
-  display: none !important; }
-
-.hidden {
-  visibility: hidden; }
+  display: none !important;
+  opacity: 0; }
 
 *,
 *::before,
@@ -26,11 +24,11 @@ html {
 body {
   box-sizing: border-box; }
 
-.fade-out {
-  opacity: 0; }
-
-.fade-in {
-  opacity: 1; }
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 body {
   font-family: "Lato";
@@ -182,7 +180,7 @@ body {
       grid-row-gap: 10px;
       align-items: center;
       justify-items: center;
-      transition: opacity 0.2s; }
+      animation: fade-in 0.5s ease-in; }
       .learn-more__content--pictures figcaption {
         font-size: 2rem; }
       .learn-more__content--pictures img {
@@ -220,7 +218,7 @@ body {
   .offer__content {
     margin: auto;
     min-height: 50%;
-    padding: 5%;
+    padding: 8%;
     text-align: center;
     display: flex;
     justify-content: center;
