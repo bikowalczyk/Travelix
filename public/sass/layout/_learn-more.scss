@@ -5,8 +5,6 @@
     justify-content: space-around;
     align-items: center;
     &__content {
-        // display: flex;
-        // flex-direction: column;
         width: 40%;
         height: 100%;
         &--pictures {
@@ -22,17 +20,14 @@
             img {
                 width: 40rem;
                 object-fit: cover;
-                // max-height: 100%;
                 border-radius: 5px;
             }
         }
         &--people {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-row-gap: 3rem;
+            display: flex;
             align-items: center;
             justify-items: center;
+            flex-direction: column;
             figcaption {
                 margin-left: 3rem;
                 font-size: $font-size-1;
@@ -45,19 +40,6 @@
                 object-fit: cover;
                 border-radius: 50%; // shape-outside: circle(50%);
             }
-            .card-people {
-                &--1 {
-                    p {
-                        grid-column: 2/3;
-                    }
-                }
-                &--2 {
-                    grid-row: 3/4;
-                }
-                &--3 {
-                    grid-row: 2/3;
-                }
-            }
         }
     }
 }
@@ -65,4 +47,13 @@
 .vertical-line{
     height: 55rem;
     border-left: 1px solid $color-dark-1;
+}
+
+.card-people-container{
+        display: flex;
+        align-items: center;
+        
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
 }

@@ -7,8 +7,11 @@
 .blur-rest:not(:hover) {
   filter: blur(3px); }
 
-.hide {
+.d-none {
   display: none !important; }
+
+.hidden {
+  visibility: hidden; }
 
 *,
 *::before,
@@ -187,12 +190,10 @@ body {
         object-fit: cover;
         border-radius: 5px; }
     .learn-more__content--people {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-row-gap: 3rem;
+      display: flex;
       align-items: center;
-      justify-items: center; }
+      justify-items: center;
+      flex-direction: column; }
       .learn-more__content--people figcaption {
         margin-left: 3rem;
         font-size: 2rem;
@@ -203,16 +204,16 @@ body {
         height: 15rem;
         object-fit: cover;
         border-radius: 50%; }
-      .learn-more__content--people .card-people--1 p {
-        grid-column: 2/3; }
-      .learn-more__content--people .card-people--2 {
-        grid-row: 3/4; }
-      .learn-more__content--people .card-people--3 {
-        grid-row: 2/3; }
 
 .vertical-line {
   height: 55rem;
   border-left: 1px solid #71C9CE; }
+
+.card-people-container {
+  display: flex;
+  align-items: center; }
+  .card-people-container:not(:last-child) {
+    margin-bottom: 2rem; }
 
 .offer {
   background-image: linear-gradient(#E3FDFD, rgba(166, 227, 233, 0.4) 40%); }
