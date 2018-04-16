@@ -1,5 +1,5 @@
 @import "abstracts/_varaibles.scss";
-@import "abstracts/utilities.scss";
+@import "abstracts/_utilities.scss";
 @import "base/_base.scss";
 @import "base/_animations.scss";
 @import "base/_typography.scss";
@@ -7,8 +7,9 @@
 @import "components/_navbar.scss";
 @import "components/_card-trip.scss";
 @import "components/_button.scss";
+@import "components/_popup.scss";
 @import "layout/_header.scss";
 @import "layout/_learn-more.scss";
 @import "layout/_offer.scss";
 @import "layout/_contact.scss";
-@import "layout/footer.scss";
+@import "layout/_footer.scss";

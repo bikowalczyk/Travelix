@@ -1,8 +1,6 @@
-.card-trip{
-    height: 100%;
-    // max-height: 53rem;
-    min-height: 53rem;
-    // min-width: 35rem;
+.card-trip {
+    height: 100%; // max-height: 53rem;
+    min-height: 53rem; // min-width: 35rem;
     width: 45%;
     background-color: $color-light-2;
     border-radius: 10px;
@@ -11,8 +9,50 @@
     flex-direction: column;
     align-items: center;
     transition: 0.3s;
-        
-    img{
+    position: relative;
+    &--back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+        animation: fade-in 0.4s ease-in;
+        font-size: 1.6rem;
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            align-items: center;
+            
+            input{
+                margin-right: 1rem;
+            }
+            
+            select{
+                margin-top: 2rem;
+            }
+                
+            
+        }
+        &:target {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__exit {
+            width: 3rem;
+            height: 3rem;
+            position: absolute;
+            top: 1%;
+            right: 2%;
+        }
+        &__main {
+            opacity: 0.3;
+            width: 80%;
+            margin: 3rem auto 2rem auto;
+        }
+    }
+    &__img {
         border-radius: 5px;
         object-fit: cover;
         width: 80%;
@@ -20,20 +60,17 @@
         min-height: 25rem;
         margin: 3rem auto 2rem auto;
     }
-
-    h4{
+    h4 {
         font-size: 2.8rem;
     }
-    a{
-        color: white !important;  //until I figure out a way to get rid of it 
+    a {
+        color: white !important; //until I figure out a way to get rid of it 
+        font-size: 2rem;
     }
-
-    p{
+    p {
         margin: 1rem auto;
     }
-    
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-right: 3rem;
     }
-
 }

@@ -24,6 +24,10 @@ html {
 body {
   box-sizing: border-box; }
 
+button {
+  border: none;
+  cursor: pointer; }
+
 @keyframes fade-in {
   from {
     opacity: 0; }
@@ -119,8 +123,40 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.3s; }
-  .card-trip img {
+  transition: 0.3s;
+  position: relative; }
+  .card-trip--back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    animation: fade-in 0.4s ease-in;
+    font-size: 1.6rem; }
+    .card-trip--back form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      align-items: center; }
+      .card-trip--back form input {
+        margin-right: 1rem; }
+      .card-trip--back form select {
+        margin-top: 2rem; }
+    .card-trip--back:target {
+      display: flex;
+      justify-content: space-between; }
+    .card-trip--back__exit {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      top: 1%;
+      right: 2%; }
+    .card-trip--back__main {
+      opacity: 0.3;
+      width: 80%;
+      margin: 3rem auto 2rem auto; }
+  .card-trip__img {
     border-radius: 5px;
     object-fit: cover;
     width: 80%;
@@ -130,7 +166,8 @@ body {
   .card-trip h4 {
     font-size: 2.8rem; }
   .card-trip a {
-    color: white !important; }
+    color: white !important;
+    font-size: 2rem; }
   .card-trip p {
     margin: 1rem auto; }
   .card-trip:not(:last-child) {
@@ -142,6 +179,40 @@ body {
   color: white;
   border-radius: 50px;
   background-color: #71C9CE; }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+  color: white;
+  align-items: center;
+  justify-content: center; }
+  .popup:target {
+    display: flex;
+    animation: fade-in 0.4s; }
+  .popup__content {
+    background-color: #CBF1F5;
+    min-height: 60rem;
+    min-width: 50rem;
+    border-radius: 3px; }
+    .popup__content--form {
+      background-color: #CBF1F5;
+      color: #7F7F7F;
+      height: 20rem;
+      border-radius: 3px;
+      display: flex;
+      padding: 2rem;
+      align-items: center; }
+      .popup__content--form img {
+        height: 80%;
+        margin-right: 1rem; }
+      .popup__content--form h2 {
+        line-height: 2; }
 
 .header {
   height: 100vh;
@@ -249,8 +320,6 @@ body {
       font: initial;
       color: inherit; }
     .contact__content-form button {
-      border: none;
-      cursor: pointer;
       padding: 1.5rem 7rem;
       background-color: #E3FDFD;
       color: inherit;
