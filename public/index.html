@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/script.js" async></script>
+    <script src="js/card.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -138,11 +139,11 @@
 
                     <div id="back1" class="card-trip card-trip--back">
                         <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
-                        <a class="card-trip--back__exit" href="#buy">
+                        <a class="card-trip--back__exit" href="#close">
                             <img src="img/svg/Union 3.svg" alt="Exit">
                         </a>
                         <h4>Vulcano Exploration</h4>
-                        <form class="card-trip__form" action="">
+                        <form class="card-trip__form">
                             <div>
                                 <label for="time">Choose your preffered time of departure:</label>
                                 <select id="time" name="Time" required>
@@ -175,7 +176,39 @@
                     <p>Duration: 6 hours</p>
                     <p>Location: Kauai</p>
                     <p>Price: 100$ per person</p>
-                    <a class="btn" href="#">Customize</a>
+                    <a class="btn" href="#back2">Customize</a>
+                    <div id="back2" class="card-trip card-trip--back">
+                            <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
+                            <a class="card-trip--back__exit" href="#close">
+                                <img src="img/svg/Union 3.svg" alt="Exit">
+                            </a>
+                            <h4>Vulcano Exploration</h4>
+                            <form class="card-trip__form">
+                                <div>
+                                    <label for="time">Choose your preffered time of departure:</label>
+                                    <select id="time" name="Time" required>
+                                        <option value="early morning">Early morning</option>
+                                        <option value="morning">Morning</option>
+                                        <option value="noon">Noon</option>
+                                    </select>
+                                </div>
+    
+                                <div>
+                                    <label for="people">How many people?</label>
+                                    <select id="people" name="people" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+    
+                                <label>
+                                    <input type="checkbox" required>I accept the terms</label>
+                                <a class="btn btn--submit" href="#popup">Checkout</a>
+                            </form>
+                        </div>
                 </div>
                 <div class="card-trip">
                     <img class="card-trip__img" src="img/windsurfing_large.jpg" alt="Surfing">
@@ -183,7 +216,39 @@
                     <p>Duration: 4 hours</p>
                     <p>Location: Kauai</p>
                     <p>Price: 125$ per person</p>
-                    <a class="btn" href="#">Customize</a>
+                    <a class="btn" href="#back3">Customize</a>
+                    <div id="back3" class="card-trip card-trip--back">
+                            <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
+                            <a class="card-trip--back__exit" href="#close">
+                                <img src="img/svg/Union 3.svg" alt="Exit">
+                            </a>
+                            <h4>Vulcano Exploration</h4>
+                            <form class="card-trip__form">
+                                <div>
+                                    <label for="time">Choose your preffered time of departure:</label>
+                                    <select id="time" name="Time" required>
+                                        <option value="early morning">Early morning</option>
+                                        <option value="morning">Morning</option>
+                                        <option value="noon">Noon</option>
+                                    </select>
+                                </div>
+    
+                                <div>
+                                    <label for="people">How many people?</label>
+                                    <select id="people" name="people" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+    
+                                <label>
+                                    <input type="checkbox" required>I accept the terms</label>
+                                <a class="btn btn--submit" href="#popup">Checkout</a>
+                            </form>
+                        </div>
                 </div>
             </div>
 
@@ -193,7 +258,7 @@
             <div class="contact__content">
                 <h1 class="heading-1 t-center">Contact us</h1>
 
-                <form action="#" class="contact__content-form">
+                <form class="contact__content-form">
                     <input type="email" placeholder="Your email" required>
                     <textarea type="text" placeholder="How can we help you?" minlength="50" maxlength="500" required></textarea>
                     <button class="btn btn--contact" type="submit">Send</button>
@@ -208,11 +273,37 @@
 
     </footer>
 
+    <!-- CREDIT CARD POPUP -->
+
     <div id="popup" class="popup">
         <div class="popup__content">
+            <div class="card-container">
+            </div>
+            <form class="popup__form">
+                <label for="number">Card number</label>
+                <input name="number" id="number" type="text" placeholder="4731 8151 6906 6387">
+                <label for="name">Name on card</label>
+                <input name="name" id="name" type="text" placeholder="Ex. Sophia Hall">
+                <div class="popup__form--bot">
+
+                    <div class="popup__form--part">
+                        <label for="expiry">Expiry date</label>
+                        <input class="input--half" type="text" id="expiry" name="expiry" placeholder="01/2022">
+                    </div>
+                    <div class="popup__form--part">
+                        <label for="cvc">Security code</label>
+                        <input class="input--half" type="text" id="cvc" name="cvc" placeholder="727">
+                    </div>
+                </div>
+
+                <a class="btn">Pay</a>
+
+            </form>
 
         </div>
     </div>
+
+    <!-- CONTACT US THANK YOU MESSAGE -->
 
     <div id="popup--form" class="popup">
         <div class="popup__content--form">
@@ -227,14 +318,14 @@
             </div>
         </div>
     </div>
-
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            ignore: '.btn'
+        });
+    </script>
 </body>
 
-<script src="js/smooth-scroll.polyfills.min.js"></script>
-<script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-        ignore: '.btn'
-    });
-</script>
+
 
 </html>
