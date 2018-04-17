@@ -270,7 +270,9 @@
     </main>
 
     <footer class="footer">
-
+            <p>Designed and coded by: Błażej Kowalczyk <a href="https://github.com/bikowalczyk" target="_blank"><img src="img/GitHub-Mark-64px.png" alt="Github account"></a></p>
+            
+            
     </footer>
 
     <!-- CREDIT CARD POPUP -->
@@ -279,27 +281,27 @@
         <div class="popup__content">
             <div class="card-container">
             </div>
-            <form class="popup__form">
+            <form class="popup__form ">
                 <label for="number">Card number</label>
-                <input name="number" id="number" type="text" placeholder="4731 8151 6906 6387">
+                <input name="number" id="number" type="text" placeholder="4731 8151 6906 6387" required>
                 <label for="name">Name on card</label>
-                <input name="name" id="name" type="text" placeholder="Ex. Sophia Hall">
+                <input name="name" id="name" type="text" placeholder="Ex. Sophia Hall" required>
                 <div class="popup__form--bot">
-
                     <div class="popup__form--part">
                         <label for="expiry">Expiry date</label>
-                        <input class="input--half" type="text" id="expiry" name="expiry" placeholder="01/2022">
+                        <input class="input--half" type="text" id="expiry" name="expiry" placeholder="01/2022" required>
                     </div>
                     <div class="popup__form--part">
                         <label for="cvc">Security code</label>
-                        <input class="input--half" type="text" id="cvc" name="cvc" placeholder="727">
+                        <input class="input--half" type="text" id="cvc" name="cvc" placeholder="727" required>
                     </div>
                 </div>
-
-                <a class="btn">Pay</a>
-
+                <a id="pay" href="#" class="btn">Pay</a>
             </form>
 
+            <div id="confirm" class="popup__content--confirmation d-none">
+                <img src="img/svg/checked.svg" alt="Yes">
+            </div>
         </div>
     </div>
 

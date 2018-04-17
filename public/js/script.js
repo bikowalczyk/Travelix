@@ -44,7 +44,7 @@ modal.addEventListener("click", () => {
     }
 }, false);
 
-modalContent.addEventListener("click",(e)=>{
+modalContent.addEventListener("click", (e) => {
     e.stopPropagation();
 })
 
@@ -55,10 +55,10 @@ modalContent.addEventListener("click",(e)=>{
 const btn = document.querySelectorAll(".btn--submit");
 const form = document.querySelectorAll(".card-trip__form");
 
-btn.forEach((e,i)=>{
-    e.addEventListener("click",(event)=>{
+btn.forEach((e, i) => {
+    e.addEventListener("click", (event) => {
         event.preventDefault();
-        if (form[i].checkValidity()){
+        if (form[i].checkValidity()) {
             location.hash = "#popup";
         }
     })
@@ -101,6 +101,36 @@ var card = new Card({
 });
 
 //CREDIT CARD FORM VALIDATION
+const validVisa = {
+    number: "4133 8103 6989 3635",
+    name: "Anthony Turner",
+    expiry: "02/2019",
+    cvc: " 999"
+};
 
+const evt = document.createEvent("HTMLEvents");
+evt.initEvent("keyup", false, true);
 
+const popup__form = document.querySelector(".popup__form");
 
+document.querySelector("#pay").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (!popup__form.checkValidity()) {
+        document.querySelector("#number").value = validVisa.number;
+        document.querySelector("#name").value = validVisa.name;
+        document.querySelector("#expiry").value = validVisa.expiry;
+        document.querySelector("#cvc").value = validVisa.cvc;
+        document.querySelector("#number").dispatchEvent(evt);
+
+    } else {
+        document.querySelector("#confirm").classList.remove("d-none");
+        setTimeout(() => {
+            document.querySelector("#confirm").classList.add("d-none");
+            location.hash = "#close";
+        }, 1200);
+        popup__form.reset();
+        document.querySelector("#number").dispatchEvent(evt);
+
+    }
+})

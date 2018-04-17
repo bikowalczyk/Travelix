@@ -229,6 +229,21 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative; }
+    .popup__content--confirmation {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      z-index: 20;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      background-color: #CBF1F5;
+      animation: fade-in 0.8s ease; }
+      .popup__content--confirmation img {
+        width: 15rem; }
     .popup__content .card-container {
       margin: 4rem; }
     .popup__content img {
@@ -366,4 +381,11 @@ body {
 
 .footer {
   height: 10rem;
-  background-color: #E3FDFD; }
+  background-color: #E3FDFD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; }
+  .footer img {
+    height: 2rem; }
