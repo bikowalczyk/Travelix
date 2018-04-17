@@ -113,15 +113,22 @@ evt.initEvent("keyup", false, true);
 
 const popup__form = document.querySelector(".popup__form");
 
+function dEvent() {
+    document.querySelector("#number").dispatchEvent(evt);
+    document.querySelector("#name").dispatchEvent(evt);
+    document.querySelector("#expiry").dispatchEvent(evt);
+    document.querySelector("#cvc").dispatchEvent(evt);
+}
+
 document.querySelector("#pay").addEventListener("click", (e) => {
     e.preventDefault();
 
-    if (!popup__form.checkValidity()) {
+    if (!popup__form.checkValidity() || document.querySelectorAll(".jp-card-invalid").length > 0) {
         document.querySelector("#number").value = validVisa.number;
         document.querySelector("#name").value = validVisa.name;
         document.querySelector("#expiry").value = validVisa.expiry;
         document.querySelector("#cvc").value = validVisa.cvc;
-        document.querySelector("#number").dispatchEvent(evt);
+        dEvent();
 
     } else {
         document.querySelector("#confirm").classList.remove("d-none");
@@ -130,7 +137,7 @@ document.querySelector("#pay").addEventListener("click", (e) => {
             location.hash = "#close";
         }, 1200);
         popup__form.reset();
-        document.querySelector("#number").dispatchEvent(evt);
+        dEvent();
 
     }
 })
