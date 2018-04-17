@@ -20,6 +20,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -48,6 +57,10 @@ body {
   font-weight: 800;
   color: #CBF1F5;
   margin: 0; }
+  @media (max-width: 56.25em) {
+    .heading-1 {
+      color: #E3FDFD;
+      font-size: 28vmin; } }
 
 .heading-2 {
   font-size: 1.5rem;
@@ -55,6 +68,11 @@ body {
   font-weight: 400;
   padding: 0 5.5vw 0;
   color: #71C9CE; }
+  @media (max-width: 56.25em) {
+    .heading-2 {
+      color: #5FA9AD;
+      font-size: 3.5vmin;
+      padding: 0 20rem 0; } }
 
 .text--logo {
   color: #5FA9AD;
@@ -65,6 +83,9 @@ body {
   justify-content: space-evenly;
   height: 40vh;
   margin: auto 0; }
+  @media (max-width: 56.25em) {
+    .composition {
+      display: none; } }
   .composition img {
     width: 100%;
     height: 100%;
@@ -86,6 +107,9 @@ body {
   position: absolute;
   z-index: 10;
   transition: all 0.5s ease; }
+  @media (max-width: 56.25em) {
+    .navbar {
+      justify-content: center; } }
   .navbar__logo {
     color: #E3FDFD;
     font-size: 2.6rem;
@@ -94,6 +118,10 @@ body {
     border-bottom: solid 2px;
     display: flex;
     align-items: center; }
+    @media (max-width: 56.25em) {
+      .navbar__logo {
+        color: #5FA9AD;
+        margin: 1rem 0rem 1rem 0rem; } }
   .navbar__nav {
     display: flex;
     justify-content: center;
@@ -101,6 +129,9 @@ body {
     font-size: 2rem;
     width: 50%;
     color: #5FA9AD; }
+    @media (max-width: 56.25em) {
+      .navbar__nav {
+        display: none; } }
     .navbar__nav a:not(:last-child) {
       margin-right: 4rem; }
     .navbar__nav--buy {
@@ -274,6 +305,9 @@ body {
   width: 100%;
   display: flex;
   background-image: linear-gradient(to right, transparent 10%, #ffffff 50%, transparent 51%); }
+  @media (max-width: 56.25em) {
+    .header {
+      background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5) 40%); } }
   .header__content {
     width: 50%;
     max-height: 100%;
@@ -281,6 +315,12 @@ body {
     position: relative;
     display: flex;
     flex-direction: column; }
+    @media (max-width: 56.25em) {
+      .header__content--text {
+        position: absolute; } }
+    @media (max-width: 56.25em) {
+      .header__content {
+        width: 100%; } }
     .header__content-video {
       object-fit: fill;
       width: 100%;
@@ -309,7 +349,7 @@ body {
       .learn-more__content--pictures figcaption {
         font-size: 2rem; }
       .learn-more__content--pictures img {
-        width: 40rem;
+        width: 45rem;
         object-fit: cover;
         border-radius: 5px; }
     .learn-more__content--people {

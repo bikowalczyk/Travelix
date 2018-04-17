@@ -15,6 +15,11 @@ body {
     font-weight: 800;
     color: $color-light-2;
     margin: 0;
+
+    @include respond (tab-port){
+        color: $color-light-1;
+        font-size: 28vmin;
+    }
 }
 
 .heading-2 {
@@ -23,6 +28,12 @@ body {
     font-weight: 400;
     padding: 0 5.5vw 0;
     color: $color-dark-1;
+
+    @include respond (tab-port){
+        color: $color-dark-2;
+        font-size: 3.5vmin;
+        padding: 0 20rem 0;
+    }
 }
 
 .text--logo {
