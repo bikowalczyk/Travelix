@@ -21,6 +21,7 @@ body {
     }
     &--contact {
         line-height: 0.8;
+        margin: 5% 0%;
         @include respond (tab-port) {
             font-size: 15rem;
         }
