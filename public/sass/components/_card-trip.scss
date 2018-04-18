@@ -10,6 +10,15 @@
     align-items: center;
     transition: 0.3s;
     position: relative;
+
+    @include respond(tab-port){
+        width: 60%;
+        min-width: 40rem;
+
+        &:not(:last-of-type){
+            margin-bottom: 6rem;
+        }
+    }
     &--back {
         position: absolute;
         top: 0;
@@ -72,5 +81,9 @@
     }
     &:not(:last-child) {
         margin-right: 3rem;
+
+        @include respond(tab-port){
+            margin-right: 0px;
+        }
     }
 }

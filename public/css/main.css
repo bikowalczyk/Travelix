@@ -75,7 +75,15 @@ body {
   @media (max-width: 56.25em) {
     .heading-1 {
       color: #E3FDFD;
-      font-size: 28vmin; } }
+      font-size: 25vw; } }
+  .heading-1--contact {
+    line-height: 0.8; }
+    @media (max-width: 56.25em) {
+      .heading-1--contact {
+        font-size: 15rem; } }
+    @media (max-width: 37.5em) {
+      .heading-1--contact {
+        font-size: 10rem; } }
 
 .heading-2 {
   font-size: 1.5rem;
@@ -187,6 +195,12 @@ body {
   align-items: center;
   transition: 0.3s;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .card-trip {
+      width: 60%;
+      min-width: 40rem; }
+      .card-trip:not(:last-of-type) {
+        margin-bottom: 6rem; } }
   .card-trip--back {
     position: absolute;
     top: 0;
@@ -234,6 +248,9 @@ body {
     margin: 1rem auto; }
   .card-trip:not(:last-child) {
     margin-right: 3rem; }
+    @media (max-width: 56.25em) {
+      .card-trip:not(:last-child) {
+        margin-right: 0px; } }
 
 .btn {
   margin: 2rem auto 3rem;
@@ -407,9 +424,16 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  @media (max-width: 56.25em) {
+    .learn-more {
+      flex-direction: column;
+      padding: 4rem 0 4rem 0; } }
   .learn-more__content {
     width: 40%;
     height: 100%; }
+    @media (max-width: 56.25em) {
+      .learn-more__content {
+        width: 80%; } }
     .learn-more__content--pictures {
       display: grid;
       grid-template-rows: auto;
@@ -428,6 +452,9 @@ body {
       align-items: center;
       justify-items: center;
       flex-direction: column; }
+      @media (max-width: 56.25em) {
+        .learn-more__content--people {
+          margin-bottom: 10rem; } }
       .learn-more__content--people figcaption {
         margin-left: 3rem;
         font-size: 2rem;
@@ -442,6 +469,9 @@ body {
 .vertical-line {
   height: 55rem;
   border-left: 1px solid #71C9CE; }
+  @media (max-width: 56.25em) {
+    .vertical-line {
+      display: none; } }
 
 .card-people-container {
   display: flex;
@@ -459,6 +489,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 56.25em) {
+      .offer__content {
+        flex-direction: column; } }
 
 .contact {
   display: flex;
