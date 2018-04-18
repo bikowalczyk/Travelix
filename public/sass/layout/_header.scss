@@ -38,4 +38,19 @@
             z-index: -1;
         }
     }
+
+    .btn-head{
+        display: none;
+        margin: 2rem auto 3rem;
+        padding: 1.5rem 4rem;
+        color: white;
+        border-radius: 50px;
+        border: 2px solid $color-light-1;
+        font-size: 2rem;
+
+        @include respond (tab-port){
+            display: block;
+
+        }
+    }
 }

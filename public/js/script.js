@@ -141,3 +141,14 @@ document.querySelector("#pay").addEventListener("click", (e) => {
 
     }
 })
+
+
+//MOBILE OVERLAY
+document.querySelector(".overlay__exit").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#overlay").style.width = "0%";
+    setTimeout(() => {
+        location.hash = "#close";
+        document.querySelector("#overlay").style.width = "100%";
+    }, 700);
+})

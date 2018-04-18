@@ -22,6 +22,9 @@
                 <a href="#buy" class="navbar__nav--buy">Buy now!</a>
             </nav>
         </div>
+        <a class="menu-mobile ignr" href="#overlay">
+            <img src="img/svg/if_menu-alt_134216.svg" alt="">
+        </a>
     </div>
 
     <header class="header">
@@ -39,6 +42,7 @@
                 ut perspiciatis
                 <br>unde omnis istpoe natus error sit voluptatem accusantium
             </h3>
+            <a class="btn-head" href="#learn-more">Learn More</a>
             <div class="composition">
                 <a href="">
                     <img src="img/lava_large.jpg" alt="Lava">
@@ -135,9 +139,49 @@
                     <p>Duration: 12 hours</p>
                     <p>Location: Hawai'i</p>
                     <p>Price: 200$ per person</p>
-                    <a class="btn " href="#back1">Customize</a>
+                    <a class="btn ignr" href="#back1">Customize</a>
 
                     <div id="back1" class="card-trip card-trip--back">
+                        <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
+                        <a class="card-trip--back__exit" href="#close">
+                            <img src="img/svg/Union 3.svg" alt="Exit">
+                        </a>
+                        <h4>Vulcano Exploration</h4>
+                        <form class="card-trip__form">
+                            <div>
+                                <label for="time">Choose your preffered time of departure:</label>
+                                <select id="time" name="Time" required>
+                                    <option value="early morning">Early morning</option>
+                                    <option value="morning">Morning</option>
+                                    <option value="noon">Noon</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="people">How many people?</label>
+                                <select id="people" name="people" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                            <label>
+                                <input type="checkbox" required>I accept the terms</label>
+                            <a class="btn btn--submit ignr" href="#popup">Checkout</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-trip card-trip--main">
+                    <img class="card-trip__img" src="img/hike_large.jpg" alt="Hiking">
+                    <h4>Hiking Trip</h4>
+                    <p>Duration: 6 hours</p>
+                    <p>Location: Kauai</p>
+                    <p>Price: 100$ per person</p>
+                    <a class="btn ignr" href="#back2">Customize</a>
+                    <div id="back2" class="card-trip card-trip--back">
                         <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
                         <a class="card-trip--back__exit" href="#close">
                             <img src="img/svg/Union 3.svg" alt="Exit">
@@ -170,85 +214,45 @@
                         </form>
                     </div>
                 </div>
-                <div class="card-trip card-trip--main">
-                    <img class="card-trip__img" src="img/hike_large.jpg" alt="Hiking">
-                    <h4>Hiking Trip</h4>
-                    <p>Duration: 6 hours</p>
-                    <p>Location: Kauai</p>
-                    <p>Price: 100$ per person</p>
-                    <a class="btn" href="#back2">Customize</a>
-                    <div id="back2" class="card-trip card-trip--back">
-                            <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
-                            <a class="card-trip--back__exit" href="#close">
-                                <img src="img/svg/Union 3.svg" alt="Exit">
-                            </a>
-                            <h4>Vulcano Exploration</h4>
-                            <form class="card-trip__form">
-                                <div>
-                                    <label for="time">Choose your preffered time of departure:</label>
-                                    <select id="time" name="Time" required>
-                                        <option value="early morning">Early morning</option>
-                                        <option value="morning">Morning</option>
-                                        <option value="noon">Noon</option>
-                                    </select>
-                                </div>
-    
-                                <div>
-                                    <label for="people">How many people?</label>
-                                    <select id="people" name="people" required>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
-    
-                                <label>
-                                    <input type="checkbox" required>I accept the terms</label>
-                                <a class="btn btn--submit" href="#popup">Checkout</a>
-                            </form>
-                        </div>
-                </div>
                 <div class="card-trip">
                     <img class="card-trip__img" src="img/windsurfing_large.jpg" alt="Surfing">
                     <h4>Surfing</h4>
                     <p>Duration: 4 hours</p>
                     <p>Location: Kauai</p>
                     <p>Price: 125$ per person</p>
-                    <a class="btn" href="#back3">Customize</a>
+                    <a class="btn ignr" href="#back3">Customize</a>
                     <div id="back3" class="card-trip card-trip--back">
-                            <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
-                            <a class="card-trip--back__exit" href="#close">
-                                <img src="img/svg/Union 3.svg" alt="Exit">
-                            </a>
-                            <h4>Vulcano Exploration</h4>
-                            <form class="card-trip__form">
-                                <div>
-                                    <label for="time">Choose your preffered time of departure:</label>
-                                    <select id="time" name="Time" required>
-                                        <option value="early morning">Early morning</option>
-                                        <option value="morning">Morning</option>
-                                        <option value="noon">Noon</option>
-                                    </select>
-                                </div>
-    
-                                <div>
-                                    <label for="people">How many people?</label>
-                                    <select id="people" name="people" required>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
-    
-                                <label>
-                                    <input type="checkbox" required>I accept the terms</label>
-                                <a class="btn btn--submit" href="#popup">Checkout</a>
-                            </form>
-                        </div>
+                        <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
+                        <a class="card-trip--back__exit" href="#close">
+                            <img src="img/svg/Union 3.svg" alt="Exit">
+                        </a>
+                        <h4>Vulcano Exploration</h4>
+                        <form class="card-trip__form">
+                            <div>
+                                <label for="time">Choose your preffered time of departure:</label>
+                                <select id="time" name="Time" required>
+                                    <option value="early morning">Early morning</option>
+                                    <option value="morning">Morning</option>
+                                    <option value="noon">Noon</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="people">How many people?</label>
+                                <select id="people" name="people" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                            <label>
+                                <input type="checkbox" required>I accept the terms</label>
+                            <a class="btn btn--submit ignr" href="#popup">Checkout</a>
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -261,7 +265,7 @@
                 <form class="contact__content-form">
                     <input type="email" placeholder="Your email" required>
                     <textarea type="text" placeholder="How can we help you?" minlength="50" maxlength="500" required></textarea>
-                    <button class="btn btn--contact" type="submit">Send</button>
+                    <button class="btn btn--contact ignr" type="submit">Send</button>
                 </form>
             </div>
 
@@ -270,9 +274,13 @@
     </main>
 
     <footer class="footer">
-            <p>Designed and coded by: Błażej Kowalczyk <a href="https://github.com/bikowalczyk" target="_blank"><img src="img/GitHub-Mark-64px.png" alt="Github account"></a></p>
-            
-            
+        <p>Designed and coded by: Błażej Kowalczyk
+            <a href="https://github.com/bikowalczyk" target="_blank">
+                <img src="img/GitHub-Mark-64px.png" alt="Github account">
+            </a>
+        </p>
+
+
     </footer>
 
     <!-- CREDIT CARD POPUP -->
@@ -296,7 +304,7 @@
                         <input class="input--half" type="text" id="cvc" name="cvc" placeholder="727" required>
                     </div>
                 </div>
-                <a id="pay" href="#" class="btn">Pay</a>
+                <a id="pay" href="#" class="btn ignr">Pay</a>
             </form>
 
             <div id="confirm" class="popup__content--confirmation d-none">
@@ -320,14 +328,27 @@
             </div>
         </div>
     </div>
+
+    <!-- MOBILE MENU -->
+    <div id="overlay" class="overlay">
+        
+        <div class="overlay__content">
+            <a href="#learn-more">Learn more</a>
+            <a href="#contact">Contact us</a>
+            <a href="#buy" class="navbar__nav--buy">Buy now!</a>
+            <a class="overlay__exit" href="#close">
+                <img src="img/svg/Union 3.svg" alt="Exit">
+            </a>
+        </div>
+    </div>
+
+
     <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
-            ignore: '.btn'
+            ignore: '.ignr',
         });
     </script>
 </body>
-
-
 
 </html>
