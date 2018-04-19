@@ -598,7 +598,8 @@ body {
       -webkit-animation: fade-in 0.5s ease-in;
       animation: fade-in 0.5s ease-in; }
       .learn-more__content--pictures figcaption {
-        font-size: 2rem; }
+        font-size: 2rem;
+        margin: 1rem 0; }
       .learn-more__content--pictures img {
         width: 45rem;
         -o-object-fit: cover;
