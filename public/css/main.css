@@ -24,7 +24,7 @@
   display: none !important; }
   @media (max-width: 56.25em) {
     .hide-desktop {
-      display: grid !important; } }
+      display: flex !important; } }
 
 *,
 *::before,
@@ -211,7 +211,7 @@ body {
   @media (max-width: 56.25em) {
     .card-trip {
       width: 60%;
-      min-width: 40rem; }
+      min-width: 35rem; }
       .card-trip:not(:last-of-type) {
         margin-bottom: 6rem; } }
   .card-trip--back {
@@ -448,14 +448,14 @@ body {
       .learn-more__content {
         width: 80%; } }
     .learn-more__content--pictures {
-      display: grid;
-      grid-template-rows: auto;
-      grid-row-gap: 10px;
+      display: flex;
+      flex-direction: column;
       align-items: center;
       justify-items: center;
       animation: fade-in 0.5s ease-in; }
       .learn-more__content--pictures figcaption {
-        font-size: 2rem; }
+        font-size: 2rem;
+        margin: 1rem 0; }
       .learn-more__content--pictures img {
         width: 45rem;
         object-fit: cover;

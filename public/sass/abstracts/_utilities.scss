@@ -32,6 +32,6 @@
 .hide-desktop {
     display: none !important;
     @include respond (tab-port) {
-        display: grid !important;
+        display: flex !important;
     }
 }
