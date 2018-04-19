@@ -448,6 +448,9 @@ body {
         width: 45rem;
         object-fit: cover;
         border-radius: 5px; }
+        @media (max-width: 37.5em) {
+          .learn-more__content--pictures img {
+            width: 73vmin; } }
     .learn-more__content--people {
       display: flex;
       align-items: center;
@@ -477,6 +480,9 @@ body {
 .card-people-container {
   display: flex;
   align-items: center; }
+  @media (max-width: 37.5em) {
+    .card-people-container {
+      flex-direction: column; } }
   .card-people-container:not(:last-child) {
     margin-bottom: 2rem; }
 
@@ -525,12 +531,12 @@ body {
       font-size: 1.5rem; }
 
 .footer {
-  height: 10rem;
   background-color: #E3FDFD;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding: 5%; }
   .footer img {
     height: 2rem; }

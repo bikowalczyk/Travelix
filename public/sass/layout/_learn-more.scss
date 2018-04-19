@@ -4,16 +4,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    @include respond (tab-port){
+    @include respond (tab-port) {
         flex-direction: column;
         padding: 4rem 0 4rem 0;
     }
     &__content {
         width: 40%;
         height: 100%;
-
-        @include respond(tab-port){
+        @include respond(tab-port) {
             width: 80%;
         }
         &--pictures {
@@ -23,7 +21,6 @@
             align-items: center;
             justify-items: center;
             animation: fade-in 0.5s ease-in;
-
             figcaption {
                 font-size: 2rem;
             }
@@ -31,6 +28,9 @@
                 width: 45rem;
                 object-fit: cover;
                 border-radius: 5px;
+                @include respond (phone) {
+                    width: 73vmin;
+                }
             }
         }
         &--people {
@@ -38,8 +38,7 @@
             align-items: center;
             justify-items: center;
             flex-direction: column;
-
-            @include respond (tab-port){
+            @include respond (tab-port) {
                 margin-bottom: 10rem;
             }
             figcaption {
@@ -58,20 +57,22 @@
     }
 }
 
-.vertical-line{
+.vertical-line {
     height: 55rem;
     border-left: 1px solid $color-dark-1;
-
-    @include respond(tab-port){
+    @include respond(tab-port) {
         display: none;
     }
 }
 
-.card-people-container{
-        display: flex;
-        align-items: center;
-        
-        &:not(:last-child){
-            margin-bottom: 2rem;
-        }
+.card-people-container {
+    display: flex;
+    align-items: center;
+
+    @include respond (phone){
+        flex-direction: column;
+    }
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
 }

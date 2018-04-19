@@ -19,19 +19,25 @@ window.onscroll = () => {
 const cards = document.querySelectorAll(".card-people-container"); //nodelist element
 const divs = document.querySelectorAll(".learn-more__content--pictures");
 
-cards.forEach((element, index) => {
-    element.addEventListener("mouseover", () => {
-        divs.forEach((v) => { //hides all divs
-            v.classList.add("d-none");
+function imgHandling() {
+    if(window.innerWidth >900){
+    cards.forEach((element, index) => {
+        element.addEventListener("mouseover", () => {
+            divs.forEach((v) => { //hides all divs
+                v.classList.add("d-none");
+            });
+            divs[index].classList.remove("d-none"); //shows div
         });
+    })}
 
-        divs[index].classList.remove("d-none"); //shows div
+}
 
+window.onresize = ()=> {
+    if(window.innerWidth >900){
+        imgHandling();
+    }
+};
 
-
-    });
-
-})
 
 //EXITING MODAL
 
