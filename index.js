@@ -5,7 +5,7 @@ var fs = require('fs');
 var http = require('http');
 
 app.set('port', (process.env.PORT || 5500))
-app.use(express.static(__dirname + '/public'))
+app.use('/travelix', express.static(__dirname + '/public'))
 
 
 app.get('/travelix', function (request, response) {
