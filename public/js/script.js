@@ -158,3 +158,4 @@ document.querySelector(".overlay__exit").addEventListener("click", (e) => {
         document.querySelector("#overlay").style.width = "100%";
     }, 700);
 })
+

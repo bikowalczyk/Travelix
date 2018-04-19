@@ -28,6 +28,9 @@
                 width: 45rem;
                 object-fit: cover;
                 border-radius: 5px;
+                @include respond(tab-port){
+                    width: initial;
+                }
                 @include respond (phone) {
                     width: 73vmin;
                 }
