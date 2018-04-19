@@ -1,35 +1,37 @@
-.t-center{
+.t-center {
     text-align: center;
 }
 
-.margin-t-big{
+.margin-t-big {
     margin-top: 8vh !important;
 }
 
-.blur-rest{             //used @ offer section
-    &:not(:hover){
-    filter: blur(3px);
+.blur-rest {
+    //used @ offer section
+    &:not(:hover) {
+        filter: blur(3px);
     }
 }
 
-.d-none{
+.d-none {
     display: none !important;
     opacity: 0;
 }
 
-.scrollbar-hidden{
+.scrollbar-hidden {
     overflow: hidden
 }
 
-.hide-mobile{
-    @include respond(tab-port){
+.hide-mobile {
+    display: block;
+    @include respond(tab-port) {
         display: none
     }
 }
 
-.hide-desktop{
+.hide-desktop {
     display: none !important;
-    @include respond (tab-port){
+    @include respond (tab-port) {
         display: grid !important;
     }
 }

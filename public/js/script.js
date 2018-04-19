@@ -32,6 +32,7 @@ function imgHandling() {
 
 }
 
+imgHandling();
 window.onresize = ()=> {
     if(window.innerWidth >900){
         imgHandling();

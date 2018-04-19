@@ -14,9 +14,11 @@
 .scrollbar-hidden {
   overflow: hidden; }
 
-@media (max-width: 56.25em) {
-  .hide-mobile {
-    display: none; } }
+.hide-mobile {
+  display: block; }
+  @media (max-width: 56.25em) {
+    .hide-mobile {
+      display: none; } }
 
 .hide-desktop {
   display: none !important; }
