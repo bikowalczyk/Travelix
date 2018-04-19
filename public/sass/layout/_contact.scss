@@ -1,13 +1,15 @@
 .contact{
     display: flex;
-    // height: 90vh;
     min-height: 50rem;
     // height: calc(100vh-5rem);
     background-image: radial-gradient($color-light-2, $color-dark-1);
     justify-content: center;
     align-content: center;
     &__content{
-        
+        padding-top: 5%;
+        @include respond (tab-port){
+            
+        }
         &-form{
             display: flex;
             flex-direction: column;

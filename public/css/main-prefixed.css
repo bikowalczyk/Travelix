@@ -187,7 +187,7 @@ body {
     fill: black;
     margin: 0.8rem 2rem 0.8rem 0rem;
     position: fixed;
-    top: 0;
+    top: 1%;
     right: 0; }
     .navbar .menu-mobile img {
       width: 100%;
@@ -503,7 +503,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 6rem;
+    font-size: 4rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -695,34 +695,36 @@ body {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center; }
-  .contact__content-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .contact__content-form input {
-      margin: 1rem; }
-    .contact__content-form input[type="email"] {
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 10px;
-      color: inherit; }
-    .contact__content-form textarea {
-      padding: 0rem 1rem;
-      height: 30vmin;
-      border: none;
-      border-radius: 5px;
-      margin: 1rem;
-      font: initial;
-      color: inherit; }
-    .contact__content-form button {
-      padding: 1.5rem 7rem;
-      background-color: #E3FDFD;
-      color: inherit;
-      font-size: 1.5rem; }
+  .contact__content {
+    padding-top: 5%; }
+    .contact__content-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .contact__content-form input {
+        margin: 1rem; }
+      .contact__content-form input[type="email"] {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 10px;
+        color: inherit; }
+      .contact__content-form textarea {
+        padding: 0rem 1rem;
+        height: 30vmin;
+        border: none;
+        border-radius: 5px;
+        margin: 1rem;
+        font: initial;
+        color: inherit; }
+      .contact__content-form button {
+        padding: 1.5rem 7rem;
+        background-color: #E3FDFD;
+        color: inherit;
+        font-size: 1.5rem; }
 
 .footer {
   background-color: #E3FDFD;
@@ -740,6 +742,6 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   font-size: 1.5rem;
-  padding: 5%; }
+  padding: 2rem; }
   .footer img {
     height: 2rem; }
