@@ -8,7 +8,7 @@ app.set('port', (process.env.PORT || 5500))
 app.use(express.static(__dirname + '/public'))
 
 
-app.get('/', function (request, response) {
+app.get('/travelix', function (request, response) {
   response.sendFile(__dirname + '/public/index.html');
 })
 
