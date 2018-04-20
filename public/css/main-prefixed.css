@@ -25,7 +25,9 @@
   display: none !important; }
   @media (max-width: 56.25em) {
     .hide-desktop {
-      display: grid !important; } }
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; } }
 
 *,
 *::before,
@@ -588,18 +590,21 @@ body {
       .learn-more__content {
         width: 80%; } }
     .learn-more__content--pictures {
-      display: grid;
-      grid-template-rows: auto;
-      grid-row-gap: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      justify-items: center;
       -webkit-animation: fade-in 0.5s ease-in;
       animation: fade-in 0.5s ease-in; }
       .learn-more__content--pictures figcaption {
         font-size: 2rem;
-        margin: 1rem 0; }
+        margin: 2rem 0; }
       .learn-more__content--pictures img {
         width: 45rem;
         -o-object-fit: cover;
