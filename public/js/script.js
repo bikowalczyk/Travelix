@@ -17,13 +17,14 @@ window.onscroll = () => {
 //LEARN MORE SECTION - IMAGE HANDLING
 
 const cards = document.querySelectorAll(".card-people-container"); //nodelist element
-const divs = document.querySelectorAll(".learn-more__content--pictures");
+const wrapper = document.querySelector(".hide-mobile");
+const divs = wrapper.querySelectorAll(".learn-more__content--pictures");
 
 function imgHandling() {
     if(window.innerWidth >900){
     cards.forEach((element, index) => {
         element.addEventListener("mouseover", () => {
-            divs.forEach((v) => { //hides all divs
+            divs.forEach((v, i) => { //hides all divs
                 v.classList.add("d-none");
             });
             divs[index].classList.remove("d-none"); //shows div
