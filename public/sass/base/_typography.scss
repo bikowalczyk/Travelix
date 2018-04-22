@@ -1,5 +1,5 @@
 body {
-    font-family: "Lato";
+    font-family: Lato, arial;
     font-weight: 400;
     color: $color-dark-3;
     a,
@@ -12,7 +12,7 @@ body {
 
 .heading-1 {
     font-size: 15rem; //better to use vmin? edit: the best way is to use REM because of zooming issues with vunits
-    font-weight: 800;
+    font-weight: 900;
     color: $color-light-2;
     margin: 0;
     @include respond (tab-port) {

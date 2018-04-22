@@ -94,7 +94,7 @@ button {
     width: 0; } }
 
 body {
-  font-family: "Lato";
+  font-family: Lato, arial;
   font-weight: 400;
   color: #7F7F7F; }
   body a,
@@ -104,7 +104,7 @@ body {
 
 .heading-1 {
   font-size: 15rem;
-  font-weight: 800;
+  font-weight: 900;
   color: #CBF1F5;
   margin: 0; }
   @media (max-width: 56.25em) {
