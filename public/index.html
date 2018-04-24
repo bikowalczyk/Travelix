@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,900" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main-min.css">
-    <script src="js/card.js" defer></script>
-    <script src="dist/js/script-min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" async></script>
+    <script src="dist/js/script-min.js" async></script>
 </head>
 
 <body>
@@ -32,7 +32,6 @@
     <header class="header">
         <div class="header__content">
             <video class="header__content-video" autoplay loop muted>
-                <source src="img/vids/large.webm" type="video/webm">
                 <source src="img/vids/large.mp4" type="video/mp4">
             </video>
         </div>
@@ -47,13 +46,13 @@
             <a class="btn-head" href="#learn-more">Learn More</a>
             <div class="composition">
                 <a>
-                    <img src="img/lava_large.jpg" alt="Lava">
+                    <img class="lozad" data-src="img/lava_large.jpg" alt="Lava">
                 </a>
                 <a>
-                    <img src="img/hike_large.jpg" alt="Hiking">
+                    <img class="lozad" data-src="img/hike_large.jpg" alt="Hiking">
                 </a>
                 <a>
-                    <img src="img/windsurfing_large.jpg" alt="Surfing">
+                    <img class="lozad" data-src="img/windsurfing_large.jpg" alt="Surfing">
                 </a>
             </div>
 
@@ -65,7 +64,7 @@
             <div class="learn-more__content learn-more__content--people">
                 <div class="card-people-container">
                     <figure class="card-people">
-                        <img src="img/face3.jpg" alt="Customer_1">
+                        <img class="lozad" data-src="img/face3.jpg" alt="Customer_1">
                     </figure>
 
                     <figcaption>"Never in my life have I thought I'd get to see real vulcanic lava! Thank you
@@ -74,7 +73,7 @@
 
                 <div class="card-people-container">
                     <figure class="card-people">
-                        <img src="img/face4.jpg" alt="Customer_2">
+                        <img class="lozad" data-src="img/face4.jpg" alt="Customer_2">
                     </figure>
                     <figcaption>"Although the hike started very early in the morning, it was worth it. Great price and logistics is what
                         make
@@ -83,7 +82,7 @@
 
                 <div class="card-people-container">
                     <figure class="card-people">
-                        <img src="img/face2.jpg" alt="Customer_3">
+                        <img class="lozad" data-src="img/face2.jpg" alt="Customer_3">
                     </figure>
                     <figcaption>"I have surfed in almost any place on Earth, but the experience I had with
                         <span class="text--logo">Travelix</span> was the best ever! The waves seemed difficult, but with their proffesional help,
@@ -97,11 +96,11 @@
             <div class="hide-mobile">
                 <div class="learn-more__content learn-more__content--pictures d-none">
                     <figure class="card-pictures">
-                        <img src="img/lava1_large.jpg" alt="Feet hanging from a clif">
+                        <img class="lozad" data-src="img/lava1_large.jpg" alt="Feet hanging from a clif">
                     </figure>
                     <figcaption class="t-center">"I got an opportunity to stick a stick into lava!"</figcaption>
                     <figure class="card-pictures">
-                        <img src="img/lava2_large.jpg" alt="Feet hanging from a clif">
+                        <img class="lozad" data-src="img/lava2_large.jpg" alt="Feet hanging from a clif">
                     </figure>
                     <figcaption class="t-center">"Have you ever seen something this beautiful?"</figcaption>
 
@@ -109,11 +108,11 @@
 
                 <div class="learn-more__content learn-more__content--pictures">
                     <figure class="card-pictures">
-                        <img src="img/coast2_large.jpg" alt="Feet hanging from a clif">
+                        <img class="lozad" data-src="img/coast2_large.jpg" alt="Feet hanging from a clif">
                     </figure>
                     <figcaption class="t-center">"Unbealivible sights are guaranteed on this tour!"</figcaption>
                     <figure class="card-pictures">
-                        <img src="img/coast_large.jpg" alt="Feet hanging from a clif">
+                        <img class="lozad" data-src="img/coast_large.jpg" alt="Feet hanging from a clif">
                     </figure>
                     <figcaption class="t-center">"Travelix helped me to find the spots with best waves!"</figcaption>
 
@@ -121,11 +120,11 @@
 
                 <div class="learn-more__content learn-more__content--pictures d-none">
                     <figure class="card-pictures">
-                        <img src="img/surfring1_large.jpg" alt="Feet hanging from a clif">
+                        <img class="lozad" data-src="img/surfring1_large.jpg" alt="Feet hanging from a clif">
                     </figure>
                     <figcaption class="t-center">"You can go surfing any time time you wish!"</figcaption>
                     <figure class="card-pictures">
-                        <img src="img/surfring2_large.jpg" alt="Feet hanging from a clif">
+                        <img class="lozad" data-src="img/surfring2_large.jpg" alt="Feet hanging from a clif">
                     </figure>
                     <figcaption class="t-center">"Only this company knows how to get to this place!"</figcaption>
 
@@ -134,33 +133,33 @@
 
             <div class="learn-more__content learn-more__content--pictures hide-desktop">
                 <figure class="card-pictures">
-                    <img src="img/lava1_large.jpg" alt="Feet hanging from a clif">
+                    <img class="lozad" data-src="img/lava1_large.jpg" alt="Feet hanging from a clif">
                 </figure>
                 <figcaption class="t-center">"I got an opportunity to stick a stick into lava!"</figcaption>
                 <figure class="card-pictures">
-                    <img src="img/lava2_large.jpg" alt="Feet hanging from a clif">
+                    <img class="lozad" data-src="img/lava2_large.jpg" alt="Feet hanging from a clif">
                 </figure>
                 <figcaption class="t-center">"Have you ever seen something this beautiful?"</figcaption>
             </div>
 
             <div class="learn-more__content learn-more__content--pictures hide-desktop">
                 <figure class="card-pictures">
-                    <img src="img/coast2_large.jpg" alt="Feet hanging from a clif">
+                    <img class="lozad" data-src="img/coast2_large.jpg" alt="Feet hanging from a clif">
                 </figure>
                 <figcaption class="t-center">"Unbealivible sights are guaranteed on this tour!"</figcaption>
                 <figure class="card-pictures">
-                    <img src="img/coast_large.jpg" alt="Feet hanging from a clif">
+                    <img class="lozad" data-src="img/coast_large.jpg" alt="Feet hanging from a clif">
                 </figure>
                 <figcaption class="t-center">"Only this company knows how to get to this place!"</figcaption>
             </div>
 
             <div class="learn-more__content learn-more__content--pictures hide-desktop">
                 <figure class="card-pictures">
-                    <img src="img/surfring1_large.jpg" alt="Feet hanging from a clif">
+                    <img class="lozad" data-src="img/surfring1_large.jpg" alt="Feet hanging from a clif">
                 </figure>
                 <figcaption class="t-center">"You can go surfing any time time you wish!"</figcaption>
                 <figure class="card-pictures">
-                    <img src="img/surfring2_large.jpg" alt="Feet hanging from a clif">
+                    <img class="lozad" data-src="img/surfring2_large.jpg" alt="Feet hanging from a clif">
                 </figure>
                 <figcaption class="t-center">"Travelix helped me to find the spots with best waves!"</figcaption>
             </div>
@@ -174,7 +173,7 @@
             <div class="offer__content">
 
                 <div class="card-trip">
-                    <img class="card-trip__img" src="img/lava_large.jpg" alt="Lava">
+                    <img class="card-trip__img lozad" data-src="img/lava_large.jpg" alt="Lava">
                     <h4>Vulcano Exploration</h4>
                     <p>Duration: 12 hours</p>
                     <p>Location: Hawai'i</p>
@@ -182,7 +181,7 @@
                     <a class="btn ignr" href="#back1">Customize</a>
 
                     <div id="back1" class="card-trip card-trip--back">
-                        <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
+                        <img class="card-trip--back__main lozad" data-src="img/svg/005-shopping-basket.svg" alt="Basket">
                         <a class="card-trip--back__exit" href="#close">
                             <img src="img/svg/Union 3.svg" alt="Exit">
                         </a>
@@ -215,14 +214,14 @@
                     </div>
                 </div>
                 <div class="card-trip card-trip--main">
-                    <img class="card-trip__img" src="img/hike_large.jpg" alt="Hiking">
+                    <img class="card-trip__img lozad" data-src="img/hike_large.jpg" alt="Hiking">
                     <h4>Hiking Trip</h4>
                     <p>Duration: 6 hours</p>
                     <p>Location: Kauai</p>
                     <p>Price: 100$ per person</p>
                     <a class="btn ignr" href="#back2">Customize</a>
                     <div id="back2" class="card-trip card-trip--back">
-                        <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
+                        <img class="card-trip--back__main lozad" data-src="img/svg/005-shopping-basket.svg" alt="Basket">
                         <a class="card-trip--back__exit" href="#close">
                             <img src="img/svg/Union 3.svg" alt="Exit">
                         </a>
@@ -255,14 +254,14 @@
                     </div>
                 </div>
                 <div class="card-trip">
-                    <img class="card-trip__img" src="img/windsurfing_large.jpg" alt="Surfing">
+                    <img class="card-trip__img lozad" data-src="img/windsurfing_large.jpg" alt="Surfing">
                     <h4>Surfing</h4>
                     <p>Duration: 4 hours</p>
                     <p>Location: Kauai</p>
                     <p>Price: 125$ per person</p>
                     <a class="btn ignr" href="#back3">Customize</a>
                     <div id="back3" class="card-trip card-trip--back">
-                        <img class="card-trip--back__main" src="img/svg/005-shopping-basket.svg" alt="Basket">
+                        <img class="card-trip--back__main lozad" data-src="img/svg/005-shopping-basket.svg" alt="Basket">
                         <a class="card-trip--back__exit" href="#close">
                             <img src="img/svg/Union 3.svg" alt="Exit">
                         </a>
@@ -316,7 +315,7 @@
     <footer class="footer">
         <p>Designed and coded by: Błażej Kowalczyk
             <a href="https://github.com/bikowalczyk" target="_blank">
-                <img src="img/GitHub-Mark-64px.png" alt="Github account">
+                <img src="/GitHub-Mark-64px.png" alt="Github account">
             </a>
         </p>
 
@@ -348,7 +347,7 @@
             </form>
 
             <div id="confirm" class="popup__content--confirmation d-none">
-                <img src="img/svg/checked.svg" alt="Yes">
+                <img class="lozad" data-src="img/svg/checked.svg" alt="Yes">
             </div>
         </div>
     </div>
@@ -357,7 +356,7 @@
 
     <div id="popup--form" class="popup">
         <div class="popup__content--form">
-            <img src="img/svg/checked.svg" alt="Yes">
+            <img class="lozad" data-src="img/svg/checked.svg" alt="Yes">
 
             <div class="popup__text">
                 <h1>Thank you for getting in touch! </h1>
@@ -378,16 +377,22 @@
             <a href="#contact">Contact us</a>
             <a href="#buy" class="navbar__nav--buy">Buy now!</a>
             <a class="overlay__exit" href="#close">
-                <img src="img/svg/Union 3.svg" alt="Exit">
+                <img class="lozad" data-src="img/svg/Union 3.svg" alt="Exit">
             </a>
         </div>
     </div>
 
 
     <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/card.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
             ignore: '.ignr',
+        });
+
+        var card = new Card({
+            form: '.popup__form',
+            container: '.card-container',
         });
     </script>
 </body>

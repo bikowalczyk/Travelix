@@ -97,17 +97,6 @@ popupForm.addEventListener("click", () => {
     }
 }, false);
 
-
-//CREDIT CARD
-var card = new Card({
-    // a selector or DOM element for the form where users will
-    // be entering their information
-    form: '.popup__form', // *required*
-    // a selector or DOM element for the container
-    // where you want the card to appear
-    container: '.card-container', // *required*
-});
-
 //CREDIT CARD FORM VALIDATION
 const validVisa = {
     number: "4133 8103 6989 3635",
@@ -160,4 +149,8 @@ document.querySelector(".overlay__exit").addEventListener("click", (e) => {
         document.querySelector("#overlay").style.width = "100%";
     }, 700);
 })
+
+
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
 
