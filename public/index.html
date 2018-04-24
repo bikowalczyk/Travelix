@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,900" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main-min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" async></script>
-    <script src="dist/js/script-min.js" async></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script type="text/javascript" src="js/intersection-observer.js"></script>
+    <script type="text/javascript" src="dist/js/script-min.js" async></script>
 </head>
 
 <body>
@@ -386,6 +387,8 @@
     <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/card.js"></script>
     <script>
+        IntersectionObserver.prototype.POLL_INTERVAL = 100;
+
         var scroll = new SmoothScroll('a[href*="#"]', {
             ignore: '.ignr',
         });
