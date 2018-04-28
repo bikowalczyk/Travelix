@@ -520,8 +520,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, transparent), color-stop(50%, #ffffff), color-stop(51%, transparent));
-  background-image: linear-gradient(to right, transparent 10%, #ffffff 50%, transparent 51%); }
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(255, 255, 255, 0.01)), color-stop(50%, #ffffff), color-stop(51%, rgba(255, 255, 255, 0.01)));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 10%, #ffffff 50%, rgba(255, 255, 255, 0.01) 51%); }
   @media (max-width: 56.25em) {
     .header {
       background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(40%, rgba(255, 255, 255, 0.5)));

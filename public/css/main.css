@@ -394,7 +394,7 @@ body {
   min-height: 50rem;
   width: 100%;
   display: flex;
-  background-image: linear-gradient(to right, transparent 10%, #ffffff 50%, transparent 51%); }
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 10%, #ffffff 50%, rgba(255, 255, 255, 0.01) 51%); }
   @media (max-width: 56.25em) {
     .header {
       background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5) 40%); } }

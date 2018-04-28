@@ -3,7 +3,7 @@
     min-height: 50rem;
     width: 100%;
     display: flex;
-    background-image: linear-gradient(to right, transparent 10%, #ffffff 50%, transparent 51%);
+    background-image: linear-gradient(to right, rgba(white,0.01) 10%, #ffffff 50%, rgba(white,0.01) 51%);
     @include respond(tab-port){
         // background-color: rgba(white, 0.6);
         background-image: linear-gradient(to bottom, white , rgba(white, 0.5) 40%);
